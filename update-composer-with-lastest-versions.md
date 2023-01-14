@@ -1,9 +1,20 @@
+# Prerquisit:
+`jq` install on mac using following command.
+
+```
+brew install jq
+```
+
 ## For required packages:
-```composer require $(composer show -s --format=json | jq '.requires | keys | map(.+" ") | add' -r)```
+```
+composer require $(composer show -s --format=json | jq '.requires | keys | map(.+" ") | add' -r)
+```
 
 
 ## For development packages:
-`composer require --dev $(composer show -s --format=json | jq '.devRequires | keys | map(.+" ") | add' -r)`
+```
+composer require --dev $(composer show -s --format=json | jq '.devRequires | keys | map(.+" ") | add' -r)
+```
 
 
 
