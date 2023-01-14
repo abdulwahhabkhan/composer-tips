@@ -1,4 +1,4 @@
-# Prerquisit:
+# Prerequisit:
 `jq` install on mac using following command.
 
 ```
